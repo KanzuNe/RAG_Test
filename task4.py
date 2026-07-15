@@ -13,6 +13,6 @@ embedding_function = SentenceTransformerEmbeddings(model_name="all-MiniLM-L6-v2"
 
 db = Chroma.from_documents(docs, embedding_function)
 
-res = db.similarity_search(query="Điểm tổng kết tính thế nào", k=2)
+res = db.similarity_search(query="Tôi không muốn bị đuổi khỏi phòng thi", k=1)
 
 print(res)
