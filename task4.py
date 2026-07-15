@@ -1,13 +1,4 @@
-from langchain_classic.chains.retrieval import create_retrieval_chain
-from langchain_community.document_loaders import TextLoader
-from langchain_classic.chains.combine_documents import create_stuff_documents_chain
-from langchain_core.prompts import ChatPromptTemplate
-from langchain_google_genai import ChatGoogleGenerativeAI
-from langchain_text_splitters import RecursiveCharacterTextSplitter
-from langchain_community.vectorstores import Chroma
-from langchain_community.embeddings.sentence_transformer import SentenceTransformerEmbeddings
-import os
-from dotenv import load_dotenv
+from dependancies import *
 load_dotenv()
 key = os.getenv("GEMINI_API_KEY")
 
