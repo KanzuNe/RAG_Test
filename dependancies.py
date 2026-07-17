@@ -8,3 +8,5 @@ from langchain_community.vectorstores import Chroma
 from langchain_community.embeddings.sentence_transformer import SentenceTransformerEmbeddings
 import os
 from dotenv import load_dotenv
+import google.genai
+import PIL.Image
